@@ -20,12 +20,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![gambar](screenshot/sc01.png)
+![gambar](screenshot/sc02.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github](https://github.com/sanris12/advice-generator-app-main)
+- Live Site URL: [github](https://sanris12.github.io/advice-generator-app-main)
 
 ### Built with
 
