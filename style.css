@@ -1,0 +1,85 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--Dark-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+}
+
+#card-advice {
+  background-color: var(--Dark-Grayish-Blue);
+  padding: 30px 30px 60px 30px;
+  max-width: 600px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  position: relative;
+}
+
+#card-advice p {
+  color: var(--Neon-Green);
+  font-weight: bold;
+}
+
+.advice {
+  text-align: center;
+  font-size: 28px;
+  color: var(--Light-Cyan);
+}
+
+.dice {
+  padding: 13px;
+  border-radius: 50%;
+  background-color: var(--Neon-Green);
+  position: absolute;
+  bottom: -25px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.dice:hover {
+  box-shadow: var(--Neon-Green) 0px 0px 20px 4px;
+}
+
+.dice-animasi {
+  animation: dice-loading 0.3s infinite ease;
+  box-shadow: var(--Neon-Green) 0px 0px 20px 4px;
+}
+
+@keyframes dice-loading {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #card-advice {
+    width: 90%;
+  }
+  .pattern {
+    width: 90%;
+  }
+}
